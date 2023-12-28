@@ -15,23 +15,6 @@ job('Aplicacion Node.js DSL') {
     steps {
         shell("npm install")
     }
-    publishers {
-	slackNotifier {
-            notifyAborted(false)
-            notifyEveryFailure(false)
-            notifyNotBuilt(false)
-            notifyUnstable(false)
-            notifyBackToNormal(false)
-            notifySuccess(false)
-            notifyRepeatedFailure(false)
-            startNotification(false)
-            includeTestSummary(false)
-            includeCustomMessage(false)
-            customMessage(null)
-            sendAs(null)
-            commitInfoChoice('NONE')
-            teamDomain(null)
-            authToken(null)
-        }
+
     }
 }
