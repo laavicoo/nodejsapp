@@ -17,8 +17,8 @@ job('Aplicacion Node.js DSL') {
     }
     publishers {
 	slackNotifier {
-            notifyAborted(true)
-            notifyEveryFailure(true)
+            notifyAborted(false)
+            notifyEveryFailure(false)
             notifyNotBuilt(false)
             notifyUnstable(false)
             notifyBackToNormal(true)
